@@ -13,10 +13,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thepaulista.github.io" # the base hostname & protocol for your site
 github_username: thePaulista 
+paginate: 4
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+markdown: kramdown #converts md to html
+permalink: /:title #removes the .html at the end of the url, only shows the title
   
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -25,4 +26,26 @@ color:
   secondary-dark: 000
 
 
+#google analytics 
+google_analytics: true
+tracking_id: UA-73012002-1 #  google analytics tracking id
 
+sass:
+  style:   compressed
+  sass_dir:   _sass
+
+gems:
+    - jekyll-paginate
+
+image:
+  source: img/_fullsize
+  output: generated
+  presets:
+    users:
+      attr:
+        class: user-portrait
+        itemprop: image
+      width: 350
+    half:
+      width: 400
+      height: 400
