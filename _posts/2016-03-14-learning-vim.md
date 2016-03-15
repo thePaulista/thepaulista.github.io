@@ -24,3 +24,5 @@ Here's my advice:
   As for the above advice, ask someone to help you with it, but don't let them takeover your dotfile, do it yourself. 
 
   Get in touch, if you want help with setting your dotfile. 
+
+  ![My helpful screenshot]({{ site.url }}/img/temple.jpg)

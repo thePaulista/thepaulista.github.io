@@ -8,8 +8,16 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
+  {%if page.image %}
+  <img class="post-content"  src="/img/{{page.image}}"/>
+  {% endif %}
+
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
   </div>
 
 </article>
+
+
