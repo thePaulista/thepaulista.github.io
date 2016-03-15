@@ -1,57 +1,4 @@
 
-<!-- Navigation -->
-
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">A force babble by an introvert!</div>
-                <div class="intro-heading">Nice to meet you though</div>
-            </div>
-        </div>
-    </header>
-
-<!-- Capture and store a URL -->
-
-{% capture location %} {{ page.url| split: '/' }} {% endcapture %}
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        <!-- Compare the page title to the URL --> 
-        
-        {% for my_page in site.pages %}
-        {% assign current = page.title | downcase %}
-          {% if my_page.title %}
-          <li {% if location == current %} class="nav__item--current"  {% else %} class="nav__item" {% endif %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          </li>
-          {% endif %}
-          
-        {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
-
-<html>
   
   <head>
     <meta charset="utf-8">
@@ -65,11 +12,11 @@
   </head>
   
   <body>
-    <div class="cover">
-      <div class="navbar navbar-default">
+    <div class="cover hidden-md">
+      <div class="navbar">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -77,7 +24,15 @@
             </button>
             <a class="navbar-brand" href="#"><span>Brand</span></a>
           </div>
-          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="active">
                 <a href="#">Home</a>
@@ -89,11 +44,11 @@
           </div>
         </div>
       </div>
-      <div class="cover-image"></div>
+      <div class="background-image-fixed cover-image" style="background-image : url('/Users/Hedy/blog/_site/img/fish_bokeh.JPG')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1>Heading</h1>
+            <h1>thePaulista</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisici eli.</p>
             <br>
             <br>
@@ -102,6 +57,6 @@
         </div>
       </div>
     </div>
-  </body>
+      </body>
 
 </html>
