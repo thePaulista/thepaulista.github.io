@@ -1,15 +1,16 @@
+      <div ></div>
 
-      <div class="cover-image" style="background-image : url('/Users/Hedy/blog/_site/img/fish_bokeh.JPG')"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>thePaulista</h1>
-            <p>i like feijoada</p>
-            <br>
-            <br>
-            <a class="btn btn-lg btn-default">Click me</a>
-          </div>
-        </div>
-      </div>
+<div class="container">
+  <img src="img/fish_bokeh.jpg" id="fish_bokeh" alt="">
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>{{ site.title }}</h1>
+      <p>i like feijoada</p>
+      <br>
+      <br>
+      <a class="btn btn-lg btn-default">{{ site.time | date_to_string }}</a>
     </div>
-   
+  </div>
+</div>
+

@@ -4,7 +4,7 @@ title: "learning vim"
 date: 2016-03-14
 ---
 
-So, I'm setting this first post using vim. Let me tell you the story... 
+So, I'm setting this first blog and post using vim. Let me tell you the story... 
 
 After having a not-so-splendid experience using atom - probably, due to my own inability to keep it from stalling or crashing every other day - I made the decision to fully engage in learning vim a week ago.  I was told the learning curve would be pretty steep, and that it would take me approximately two weeks to be as productive, or near-productive as I was with my previous editor.
 
