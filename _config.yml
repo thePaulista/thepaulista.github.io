@@ -30,6 +30,7 @@ sass:
 
 gems:
     - jekyll-paginate
+comments: true
 
 
 
