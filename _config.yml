@@ -10,7 +10,7 @@ title: thePaulista
 email: hedywoo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   "when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create" _why the lucky stiff
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://thepaulista.github.io" # the base hostname & protocol for your site
 github_username: thePaulista 
 paginate: 4
@@ -19,12 +19,6 @@ paginate: 4
 markdown: kramdown #converts md to html
 permalink: /:title #removes the .html at the end of the url, only shows the title
   
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fed136
-  secondary: fec503 
-  secondary-dark: 000
-
 
 #google analytics 
 google_analytics: true

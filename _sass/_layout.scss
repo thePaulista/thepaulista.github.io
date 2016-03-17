@@ -2,6 +2,14 @@
  * Site header
  */
 
+.fish {
+  background-image: url("/img/fish_bokeh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 800px;
+}
+
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
@@ -25,9 +33,16 @@
     }
 }
 
+.navbar {
+  background-image: none;
+}
+
+
+
 .site-nav {
     float: right;
     line-height: 56px;
+    color: blue;
 
     .menu-icon {
         display: none;
@@ -94,13 +109,21 @@
 }
 
 
-
+.page-heading {
+    padding: $spacing-unit 1;
+}
 /**
  * Site footer
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 1;
+}
+
+.football {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-heading {
