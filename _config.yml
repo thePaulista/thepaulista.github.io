@@ -22,7 +22,7 @@ permalink: pretty #removes the .html at the end of the url, only shows the title
 
 #google analytics 
 google_analytics: true
-tracking_id: UA-73012002-1 #  google analytics tracking id
+tracking_id: UA-73012002-2 #  google analytics tracking id
 
 sass:
   style:   compressed
