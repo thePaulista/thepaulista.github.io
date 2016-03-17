@@ -17,8 +17,8 @@ paginate: 4
 
 # Build settings
 markdown: kramdown #converts md to html
-permalink: /:title #removes the .html at the end of the url, only shows the title
-  
+permalink: pretty #removes the .html at the end of the url, only shows the title
+
 
 #google analytics 
 google_analytics: true
@@ -30,4 +30,7 @@ sass:
 
 gems:
     - jekyll-paginate
+
+
+
 
