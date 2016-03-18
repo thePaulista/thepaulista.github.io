@@ -30,8 +30,17 @@ sass:
 
 gems:
     - jekyll-paginate
-comments: true
 
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Hedy the Paulista
+      layout: "post"
+      category: opinions
+      comments: true
 
 
