@@ -10,4 +10,19 @@
    
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+<!--trying out ajax -->
+  <script> 
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    document.getElementById('ajax').innerHTML = xhr.responseText;
+  }
+};
+xhr.open("GET", "history.html");
+function.sendAJAX() {
+  xhr.send();
+  document.getElementById('load').style.display = "none";
+}
+  </script>
 </head>
