@@ -29,7 +29,43 @@
     {% include footer.html %}
     {% include disqus.html %}
     <script id="dsq-count-scr" src="//thepaulistagithub.disqus.com/count.js" async></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="http://localhost:9292/ajax_logger.js"></script>     
+
+    <script>      
+var payload = {
+  "url": location.href,
+  "requestedAt":"2016-04-01 21:38:28 -0700",
+  "respondedIn":37,
+  "referredBy":"http://jumpstartlab.com",
+  "requestType":"GET",
+  "parameters":[],
+  "eventName": "AjaxedWithVimAnalytics",
+  "userAgent": navigator.userAgent,
+  "resolutionWidth": window.screen.width,
+  "resolutionHeight": window.screen.height,
+  "ip":"63.29.38.211"
+}
+var payloadString = 'payload='+JSON.stringify(payload);
+$.ajax({
+  method: "POST",
+  crossDomain: true,
+  url: "http://localhost:9292/sources",
+  data: { identifier: "blog", rootUrl: location.origin }
+})
+.done(function( msg ) {
+  console.log( "Site Register" + msg );
+});
+$.ajax({
+  method: "POST",
+  crossDomain: true,
+  url: "http://localhost:9292/sources/jumpstartlab/data",
+  data:  payloadString
+})
+.done(function( msg ) {
+  console.log( "Data Saved: " + msg );
+});
+    </script>
   </body>
+
 </html>
